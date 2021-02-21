@@ -1,5 +1,10 @@
+import MainPage from "../src/components/MainPage";
 const Home = () => {
-  return <div className="bg-black text-white"> hello world </div>;
+  return (
+    <div>
+      <MainPage />
+    </div>
+  );
 };
 
 export default Home;
