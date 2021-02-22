@@ -11,7 +11,7 @@ const ActivityTag = (props) => {
         </div>
       </div>
       <hr />
-      <div className="font-bold">{name}</div>
+      <div className="font-bold pt-3">{name}</div>
       <div>{detail}</div>
     </div>
   );

@@ -1,3 +1,4 @@
+import Button from "./Button";
 const BeenTogether = () => {
   return (
     <div className="text-white bg-gradient-to-r from-tomato via-coral to-yellow-400 container mx-auto px-2 text-center pb-20">
@@ -7,8 +8,8 @@ const BeenTogether = () => {
           <div className="h-32 w-32 rounded-full border border-gray-500 border-dashed ">
             <img src="" alt="my avt " />
           </div>
-          <div className="my-4 text-black bg-white rounded-full py-2">
-            Duy Tung{" "}
+          <div className="w-3/4 mx-auto">
+            <Button name="Duy Tung" />
           </div>
         </div>
         <div className="flex flex-col col-span-2 text-2xl">
@@ -19,8 +20,8 @@ const BeenTogether = () => {
           <div className="h-32 w-32 rounded-full border border-gray-500 border-dashed">
             <img src="" alt="her avt " />
           </div>
-          <div className="my-4 text-black bg-white rounded-full py-2">
-            To Quyen{" "}
+          <div className="w-3/4 mx-auto">
+            <Button name="To Quyen" />
           </div>
         </div>
       </div>
