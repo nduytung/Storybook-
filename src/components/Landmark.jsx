@@ -1,8 +1,4 @@
 import SectionHeader from "./SectionHeader";
-
-const renderEvents = async (year) => {
-  const res = await fetch();
-};
 const renderYear = (years) => {
   return years.map((year, i) => {
     return (
@@ -15,7 +11,8 @@ const renderYear = (years) => {
     );
   });
 };
-const Landmark = () => {
+const Landmark = ({ data }) => {
+  console.log(data);
   const years = [18, 19, 20, 21];
   return (
     <div className="container mx-auto px-2">
@@ -27,4 +24,13 @@ const Landmark = () => {
   );
 };
 
+export const getStaticProps = async () => {
+  const res = await fetch("http://localhost:3001/landmarks");
+  const data = await res.json();
+  return {
+    props: {
+      data,
+    },
+  };
+};
 export default Landmark;

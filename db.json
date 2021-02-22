@@ -1,0 +1,29 @@
+{
+  "landmarks": [
+    {
+      "year": 2018,
+      "date": "01/02",
+      "detail": "2018 lorem ipsum this is just a testing message"
+    },
+    {
+      "year": 2018,
+      "date": "01/02",
+      "detail": "2018 lorem ipsum this is just a testing message"
+    },
+    {
+      "year": 2019,
+      "date": "01/02",
+      "detail": "2019 lorem ipsum this is just a testing message"
+    },
+    {
+      "year": 2020,
+      "date": "01/02",
+      "detail": "2020 lorem ipsum this is just a testing message"
+    },
+    {
+      "year": 2021,
+      "date": "01/02",
+      "detail": "2021 lorem ipsum this is just a testing message"
+    }
+  ]
+}
