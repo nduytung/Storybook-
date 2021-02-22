@@ -21,10 +21,7 @@ const Header = () => {
         </div>
       </div>
       <div className={`fixed top-0 right-0 w-full ${displayMenu}`}>
-        <div
-          class="bg-gray-500 w-1/3 bg-opacity-50"
-          onClick={changeDisplay}
-        ></div>
+        <div class="bg-white w-1/3 bg-opacity-50" onClick={changeDisplay}></div>
         <SideBar changeDisplay={changeDisplay} />
       </div>
     </div>

@@ -1,7 +1,7 @@
 import Button from "./Button";
 const BeenTogether = () => {
   return (
-    <div className="text-white bg-gradient-to-r from-tomato via-coral to-yellow-400 container mx-auto px-2 text-center pb-20 rounded-b-3xl">
+    <div className="text-white bg-gradient-to-r from-tomato via-coral to-yellow-400 container mx-auto px-2 text-center pb-20 ">
       <div className=" text-2xl py-20">Been together for </div>
       <div className="grid grid-cols-8">
         <div className="col-span-3">
