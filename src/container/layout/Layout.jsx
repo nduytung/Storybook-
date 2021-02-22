@@ -2,9 +2,9 @@ import Header from "./Header";
 import Footer from "./Footer";
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div class="flex flex-col h-screen">
       <Header />
-      {children}
+      <div class="flex-grow">{children}</div>
       <Footer />
     </div>
   );

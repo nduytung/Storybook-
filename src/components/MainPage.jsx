@@ -1,5 +1,12 @@
+import BeenTogether from "../components/BeenTogether";
+import Upcomming from "./Upcomming";
 const MainPage = () => {
-  return <div> this is the main page buts changed </div>;
+  return (
+    <div className="">
+      <BeenTogether />
+      <Upcomming />
+    </div>
+  );
 };
 
 export default MainPage;
