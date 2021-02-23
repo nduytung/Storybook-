@@ -2,7 +2,7 @@ import ActivityTag from "./ActivityTag";
 import SectionHeader from "./SectionHeader";
 const Upcomming = () => {
   return (
-    <div className="py-4">
+    <div className="py-4 ">
       <SectionHeader name="Upcomming" emph="activities" />
       <ActivityTag
         name="test"
