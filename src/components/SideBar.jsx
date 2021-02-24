@@ -12,7 +12,7 @@ const SideBar = (props) => {
       <div className="w-32 h-32 rounded-full bg-gray-500 mx-auto"> </div>
       <hr className="my-6" />
       <ul>
-        <li className="hover:bg-tomato hover:text-white">
+        <li onClick={changeDisplay}>
           <Link href="/aboutyou">
             <a className="flex items-center text-gray-700">
               <FaHeart className="mr-3" /> About Youuuuu
@@ -20,7 +20,7 @@ const SideBar = (props) => {
           </Link>
         </li>
         <hr />
-        <li className="hover:bg-tomato hover:text-white">
+        <li onClick={changeDisplay}>
           <Link href="/aboutme">
             <a className="flex items-center text-gray-700">
               <IoShieldCheckmarkSharp className="mr-3" /> About Meeeeeeee

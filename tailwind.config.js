@@ -5,15 +5,22 @@ module.exports = {
     gradientColorStops: (theme) => ({
       ...theme("colors"),
       tomato: "#ff5757",
-      coral: "#fe7e5d",
+      coral: "#CF8BF3",
+      purple: "#ff5864",
+      pink: "#ff9472",
     }),
     backgroundColor: (theme) => ({
       ...theme("colors"),
       tomato: "#ff5757",
+      purple: "#ff5864",
+      pink: "#ff9472",
     }),
     textColor: (theme) => ({
       ...theme("colors"),
       tomato: "#ff5757",
+      purple: "#ff5864",
+      pink: "#ff9472",
+      coral: "#CF8BF3",
     }),
     // borderColor: (theme) => ({
     //   ...theme("colors"),

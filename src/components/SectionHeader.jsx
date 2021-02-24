@@ -1,5 +1,5 @@
 import Flip from "react-reveal/Flip";
-
+import { BsPencilSquare } from "react-icons/bs";
 const SectionHeader = (props) => {
   const { name, emph } = props;
 
@@ -7,7 +7,7 @@ const SectionHeader = (props) => {
     <Flip bottom>
       <div className="text-center text-2xl py-4">
         {name}
-        <span className="text-tomato ml-1">{emph}</span>
+        <span className="text-purple ml-1">{emph}</span>
       </div>
     </Flip>
   );

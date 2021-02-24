@@ -7,12 +7,7 @@ const Upcomming = () => {
       <ActivityTag
         name="test"
         date="08/01/2021"
-        detail="ajhvgfehjgweghjfwehjfwehjv"
-      />
-      <ActivityTag
-        name="test"
-        date="08/01/2021"
-        detail="ajhvgfehjgweghjfwehjfwehjv"
+        detail="ajhvgfehjgweghjfwehjfwehjv "
       />
     </div>
   );

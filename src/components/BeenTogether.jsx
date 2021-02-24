@@ -19,7 +19,7 @@ const BeenTogether = () => {
     setCount(calculatingDate());
   }, []);
   return (
-    <div className="text-white bg-gradient-to-r from-tomato via-coral to-yellow-400 container mx-auto px-2 text-center pb-20 ">
+    <div className="text-white bg-gradient-to-r from-purple to-pink container mx-auto px-2 text-center pb-10 ">
       <div className=" text-2xl py-20">Been together for </div>
       <div className="grid grid-cols-8">
         <Fade left>
@@ -31,7 +31,7 @@ const BeenTogether = () => {
               className="z-0 h-32 w-32 rounded-full border border-gray-500 border-dashed mx-auto"
             />
             <div className="w-3/4 mx-auto">
-              <Button name="Duy Tung" />
+              <Button name="Duy Tùng" />
             </div>
           </div>
         </Fade>
@@ -51,7 +51,7 @@ const BeenTogether = () => {
             />
 
             <div className="w-3/4 mx-auto">
-              <Button name="To Quyen" />
+              <Button name="Tố Quyên" />
             </div>
           </div>
         </Fade>

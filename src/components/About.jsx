@@ -1,21 +1,25 @@
+import { FaHeartbeat } from "react-icons/fa";
+import { CgProfile } from "react-icons/cg";
 const About = (props) => {
   const { name, dob, color, number, dislike, note } = props;
   return (
     <div>
-      <div className="bg-gradient-to-r from-tomato via-coral to-yellow-400 h-48 "></div>
-      <div className="w-36 h-36 rounded-full bg-white mx-auto -mt-20"></div>
-
-      <span className="text-tomato text-2xl font-bold my-3 px-2">
-        Information
-      </span>
-      <div className="border border-gray-200 rounded-xl mx-2 my-4 leading-14 px-4 ">
-        <div className="">Name: {name}</div>
-        <hr /> <div className="">DOB: {dob}</div>
-        <hr /> <div className="">Color: {color}</div>
-        <hr /> <div className="">Number: {number}</div>
-        <hr /> <div className="">Dislike: {dislike}</div>
-        <hr /> <div className="">Note: {note}</div>
-        <hr />
+      <div className="bg-purple h-48 w-full rounded-b-3xl">
+        <p className="text-white text-4xl mt-5 pt-8 font-bold px-2 flex items-center">
+          {" "}
+          <CgProfile className="mr-3" /> profile
+        </p>
+      </div>
+      <div className="shadow-2xl container -mt-20 w-11/12 mx-auto pb-4 rounded-2xl overflow-hidden border border-gray-200">
+        <div className="bg-gray-400 w-full h-96"></div>
+        <div className="mx-2 my-3">
+          <p className="text-2xl text-gray-600 flex items-center">
+            {" "}
+            <FaHeartbeat className="mr-3" /> Her name
+          </p>
+          <hr className="w-1/3 bg-tomato h-0.5 my-2" />
+          <p className="text-gray-400 text-base">This is testing description</p>
+        </div>
       </div>
     </div>
   );
