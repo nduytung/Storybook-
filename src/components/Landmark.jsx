@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import SectionHeader from "./SectionHeader";
+import Fade from "react-reveal/Fade";
 
 const fetchData = async () => {
   const res = await fetch(`http://localhost:3001/landmarks`);
@@ -11,12 +12,14 @@ const renderLandmark = (list, year = 18) => {
   return list.map((item, i) => {
     if (item.year == year)
       return (
-        <li key={i} className="text-lg  flex items-center my-4">
-          <div className="rounded-xl text-white font-semibold bg-tomato px-2 py-3">
-            On {item.date}
-          </div>
-          <div className="ml-4">{item.detail}</div>
-        </li>
+        <Fade bottom>
+          <li key={i} className="text-lg  flex items-center my-4">
+            <div className="rounded-xl text-white font-semibold bg-tomato px-2 py-3">
+              On {item.date}
+            </div>
+            <div className="ml-4">{item.detail}</div>
+          </li>
+        </Fade>
       );
   });
 };

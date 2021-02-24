@@ -4,7 +4,7 @@ import { IoShieldCheckmarkSharp } from "react-icons/io5";
 const SideBar = (props) => {
   let { changeDisplay } = props;
   return (
-    <div className={`h-screen w-2/3 bg-white py-6 px-3 text-xl leading-14`}>
+    <div className={` h-screen w-2/3 bg-white py-6 px-3 text-xl leading-14`}>
       <FaTimes
         className="text-xl float-right text-tomato"
         onClick={changeDisplay}

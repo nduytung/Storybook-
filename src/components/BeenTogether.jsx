@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Button from "./Button";
 import Fade from "react-reveal/Fade";
+import Tada from "react-reveal/Tada";
+import Image from "next/image";
 
 const calculatingDate = () => {
   let date1 = new Date("11/03/2020");
@@ -22,26 +24,37 @@ const BeenTogether = () => {
       <div className="grid grid-cols-8">
         <Fade left>
           <div className="col-span-3">
-            <div className="h-32 w-32 rounded-full border border-gray-500 border-dashed mx-auto">
-              <img src="" alt="my avt " />
-            </div>
+            <Image
+              src="/me.jpg"
+              width={300}
+              height={300}
+              className="z-0 h-32 w-32 rounded-full border border-gray-500 border-dashed mx-auto"
+            />
             <div className="w-3/4 mx-auto">
               <Button name="Duy Tung" />
             </div>
           </div>
         </Fade>
-        <div className="flex flex-col col-span-2 text-2xl">
-          <span className="text-4xl font-bold my-4">{count}</span>
-          <span>days</span>
-        </div>
-        <div className="col-span-3">
-          <div className="h-32 w-32 rounded-full border border-gray-500 border-dashed mx-auto">
-            <img src="" alt="her avt " />
+        <Tada>
+          <div className="flex flex-col col-span-2 text-2xl">
+            <span className="text-4xl font-bold my-4">{count}</span>
+            <span>days</span>
           </div>
-          <div className="w-3/4 mx-auto">
-            <Button name="To Quyen" />
+        </Tada>
+        <Fade right>
+          <div className="col-span-3">
+            <Image
+              src="/her.jpg"
+              width={300}
+              height={300}
+              className="z-0 h-32 w-32 rounded-full border border-gray-500 border-dashed mx-auto"
+            />
+
+            <div className="w-3/4 mx-auto">
+              <Button name="To Quyen" />
+            </div>
           </div>
-        </div>
+        </Fade>
       </div>
     </div>
   );
