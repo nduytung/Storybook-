@@ -1,33 +1,35 @@
 import { useEffect, useState } from "react";
 import SectionHeader from "./SectionHeader";
 import Fade from "react-reveal/Fade";
-
-const fetchData = async () => {
-  const res = await fetch(`http://localhost:3001/landmarks`);
-  const items = await res.json();
-  return items;
-};
+import { data } from "autoprefixer";
 
 const renderLandmark = (list, year = 18) => {
-  return list.map((item, i) => {
-    if (item.year == year)
-      return (
-        <Fade bottom>
-          <li key={i} className="text-lg  flex items-center my-4">
-            <div className="rounded-xl text-white font-semibold bg-pink px-2 py-3">
-              On {item.date}
-            </div>
-            <div className="ml-4">{item.detail}</div>
-          </li>
-        </Fade>
-      );
-  });
+  if (list != null)
+    return list.map((item, i) => {
+      if (item.year == year)
+        return (
+          <Fade bottom>
+            <li key={i} className="text-lg  flex items-center my-4">
+              <div className="rounded-xl text-white font-semibold bg-pink px-2 py-3">
+                On {item.date}
+              </div>
+              <div className="ml-4">{item.detail}</div>
+            </li>
+          </Fade>
+        );
+    });
+};
+
+const fetchLandmarks = async () => {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/landmarks`);
+  const data = await res.json();
+
+  return data;
 };
 
 const Landmark = () => {
-  let [eventList, setEventList] = useState([]);
   let [activeYear, setActiveYear] = useState(18);
-
+  let [landmark, setLandmark] = useState([]);
   const renderYear = () => {
     return years.map((year, i) => {
       return (
@@ -44,18 +46,18 @@ const Landmark = () => {
     });
   };
 
-  const years = [18, 19, 20, 21];
-
   useEffect(() => {
-    fetchData().then((data) => setEventList(data));
-  });
+    fetchLandmarks().then((data) => setLandmark(data));
+  }, []);
+
+  const years = [18, 19, 20, 21];
 
   return (
     <div className="container mx-auto px-2 mb-10" id="landmark">
       <SectionHeader name="Our" emph="landmarks" />
       <div className={`grid grid-cols-${years.length}`}>{renderYear()}</div>
       <div className=" mt-3 rounded-3xl bg-white border border-gray-200 w-full container py-4 px-2 mx-auto">
-        {renderLandmark(eventList, activeYear)}
+        {renderLandmark(landmark, activeYear)}
       </div>
     </div>
   );

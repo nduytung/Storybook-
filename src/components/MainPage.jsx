@@ -1,6 +1,7 @@
 import BeenTogether from "../components/BeenTogether";
 import Upcomming from "./Upcomming";
 import Landmark from "./Landmark";
+
 const MainPage = () => {
   return (
     <div className="">

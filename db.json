@@ -40,5 +40,19 @@
       "date": "01/02",
       "detail": "21 lorem ipsum this is just a testing message"
     }
+  ],
+  "newNote": [
+    {
+      "id": 1,
+      "date": "this is the note header",
+      "header": "Tik tok this is a reminder",
+      "detail": "this is just a reminder"
+    },
+    {
+      "date": "16/11",
+      "header": "header",
+      "detail": "detaldhdshjvsdfsdf",
+      "id": 2
+    }
   ]
 }
