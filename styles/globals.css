@@ -18,3 +18,7 @@ li {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button:focus {
+  outline: none;
+}

@@ -26,6 +26,7 @@ module.exports = {
     //   ...theme("colors"),
     //   tomato: "#ff5757",
     // }),
+
     extend: {
       lineHeight: {
         14: "3.5rem",

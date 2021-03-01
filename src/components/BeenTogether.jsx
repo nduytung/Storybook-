@@ -31,7 +31,7 @@ const BeenTogether = () => {
               className="z-0 h-32 w-32 rounded-full border border-gray-500 border-dashed mx-auto"
             />
             <div className="w-3/4 mx-auto">
-              <Button name="Duy Tùng" />
+              <Button name="Duy Tùng" link="/aboutme" />
             </div>
           </div>
         </Fade>
@@ -51,7 +51,7 @@ const BeenTogether = () => {
             />
 
             <div className="w-3/4 mx-auto">
-              <Button name="Tố Quyên" />
+              <Button name="Tố Quyên" link="/aboutyou" />
             </div>
           </div>
         </Fade>
