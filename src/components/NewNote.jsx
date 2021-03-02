@@ -35,16 +35,16 @@ const NewNote = (props) => {
   return (
     <div>
       <div
-        className="h-screen w-full bg-gray-200 opacity-50 absolute"
+        className="h-screen w-full bg-gray-200 opacity-50 top-0 fixed"
         onClick={changeDisplayNote}
       ></div>
-      <div className="bg-white rounded-xl mx-2  my-5 absolute py-5 px-2 shadow-xl">
-        <p className="text-2xl text-gray-700 px-1">New activity here bae</p>
+      <div className="bg-white rounded-xl mx-2  my-5 fixed py-5 px-2 shadow-xl">
+        <p className="text-2xl text-gray-700 px-1">Thêm một ghi chú nàoo</p>
         <hr className="my-4" />
         <div>
           <input
             type="text"
-            placeholder="Date"
+            placeholder="Ngày"
             name="date"
             value={data.date}
             onChange={handleChange}
@@ -52,7 +52,7 @@ const NewNote = (props) => {
           />
           <input
             type="text"
-            placeholder="Header"
+            placeholder="Tiêu đề"
             name="header"
             value={data.header}
             onChange={handleChange}
@@ -60,23 +60,23 @@ const NewNote = (props) => {
           />
           <input
             type="text"
-            placeholder="Detail"
+            placeholder="Ghi chú"
             name="detail"
             value={data.detail}
             onChange={handleChange}
             className="border border-gray-200 rounded-lg leading-14 w-full px-4 my-3 "
           />
           <hr className="my-4" />
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-center">
             <button
               type="button"
               onClick={() => submitNote(data, changeDisplayNote)}
-              className=" border border-blue-400 rounded-full py-2 text-xl px-8 my-4 text-blue-400"
+              className=" text-xl mr-8 text-blue-400"
             >
               Okayyy
             </button>
-            <a onClick={changeDisplayNote} className="text-xl text-gray-500">
-              Cancel
+            <a onClick={changeDisplayNote} className="text-lg text-gray-500">
+              Hủy bỏ
             </a>
           </div>
         </div>

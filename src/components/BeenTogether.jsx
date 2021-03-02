@@ -38,7 +38,7 @@ const BeenTogether = () => {
         <Tada>
           <div className="flex flex-col col-span-2 text-2xl">
             <span className="text-4xl font-bold my-4">{count}</span>
-            <span className="text-lg">DAYS</span>
+            <span className="text-lg">DAYS </span>
           </div>
         </Tada>
         <Fade right>

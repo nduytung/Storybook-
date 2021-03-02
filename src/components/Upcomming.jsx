@@ -41,7 +41,7 @@ const Upcomming = () => {
   }, [reload]);
   return (
     <div className="py-4 ">
-      <SectionHeader name="Upcomming" emph="activities" />
+      <SectionHeader name="Upcoming" emph="activities" />
       <ul>{renderActivity(note, changeReload)}</ul>
     </div>
   );

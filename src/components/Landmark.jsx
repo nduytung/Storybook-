@@ -9,11 +9,11 @@ const renderLandmark = (list, year = 18) => {
       if (item.year == year)
         return (
           <Fade bottom>
-            <li key={i} className="text-lg  flex items-center my-4">
-              <div className="rounded-xl text-white font-semibold bg-pink px-2 py-3">
+            <li key={i} className="text-lg grid grid-cols-6 items-center my-4">
+              <div className="rounded-xl text-white text-base font-semibold bg-pink py-3 text-center">
                 On {item.date}
               </div>
-              <div className="ml-4">{item.detail}</div>
+              <div className="col-span-5 px-3">{item.detail}</div>
             </li>
           </Fade>
         );
@@ -54,7 +54,7 @@ const Landmark = () => {
 
   return (
     <div className="container mx-auto px-2 mb-10" id="landmark">
-      <SectionHeader name="Our" emph="landmarks" />
+      <SectionHeader name="Our" emph="landmarks, hehe" />
       <div className={`grid grid-cols-${years.length}`}>{renderYear()}</div>
       <div className=" mt-3 rounded-3xl bg-white border border-gray-200 w-full container py-4 px-2 mx-auto">
         {renderLandmark(landmark, activeYear)}
