@@ -2,7 +2,8 @@ import { ImHome, ImFilePicture } from "react-icons/im";
 import { FaCalendarCheck, FaFacebookMessenger } from "react-icons/fa";
 import { AiFillPhone } from "react-icons/ai";
 import { BsPlusCircleFill } from "react-icons/bs";
-import { BiNotepad, BiPurchaseTagAlt } from "react-icons/bi";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Fade from "react-reveal/Fade";
 import Link from "next/link";
 const Footer = (props) => {
@@ -14,7 +15,11 @@ const Footer = (props) => {
         <Link href="/">
           <ImHome />
         </Link>
-        <AiFillPhone />
+        <AiFillPhone
+          onClick={() => {
+            toast.info("Số của mình là 0919516377 ;-)");
+          }}
+        />
         <div>
           <a href="#landmark">
             <BsPlusCircleFill
@@ -23,11 +28,16 @@ const Footer = (props) => {
             />
           </a>
         </div>
-        <FaCalendarCheck />
+        <FaCalendarCheck
+          onClick={() => {
+            toast.info("Phần này mình sẽ thêm, yên tâm hihihihi");
+          }}
+        />
         <Link href="https://www.facebook.com/Rye1611/">
           <FaFacebookMessenger />
         </Link>
       </div>
+      <ToastContainer autoClose={10000} />
     </Fade>
   );
 };

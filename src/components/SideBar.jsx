@@ -7,7 +7,7 @@ const SideBar = (props) => {
   let { changeDisplay } = props;
   return (
     <div className={` h-screen w-2/3 bg-white text-xl leading-14`}>
-      <div className="bg-tomato pt-4 pb-10 px-3 rounded-b-full rounded-r-full">
+      <div className="bg-tomato pt-4 pb-10 px-3 rounded-b-full ">
         <FaTimes
           className="text-xl right-0 text-white"
           onClick={changeDisplay}

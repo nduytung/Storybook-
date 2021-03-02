@@ -19,8 +19,8 @@ const BeenTogether = () => {
     setCount(calculatingDate());
   }, []);
   return (
-    <div className="text-white bg-gradient-to-r from-purple to-pink container mx-auto px-2 text-center pb-10 ">
-      <div className=" text-2xl py-20">Been together for </div>
+    <div className="text-white bg-gradient-to-r from-purple to-pink container mx-auto px-2 text-center pb-12 ">
+      <div className=" text-2xl pt-16 pb-12">Been together for </div>
       <div className="grid grid-cols-8">
         <Fade left>
           <div className="col-span-3">
@@ -38,7 +38,7 @@ const BeenTogether = () => {
         <Tada>
           <div className="flex flex-col col-span-2 text-2xl">
             <span className="text-4xl font-bold my-4">{count}</span>
-            <span>days</span>
+            <span className="text-lg">DAYS</span>
           </div>
         </Tada>
         <Fade right>
