@@ -22,10 +22,6 @@ module.exports = {
       pink: "#ff9472",
       coral: "#CF8BF3",
     }),
-    // borderColor: (theme) => ({
-    //   ...theme("colors"),
-    //   tomato: "#ff5757",
-    // }),
 
     extend: {
       lineHeight: {

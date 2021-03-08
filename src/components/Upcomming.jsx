@@ -27,18 +27,19 @@ const fetchNote = async () => {
 };
 
 const Upcomming = () => {
-  const [note, setNote] = useState([]);
   const [reload, setReload] = useState(false);
-
+  const note = [
+    {
+      id: 1,
+      date: "26/06",
+      header: "Date",
+      detail: " Đi ăn cái gì ngon ngon, nhờ",
+    },
+  ];
   const changeReload = () => {
     setReload(!reload);
   };
 
-  useEffect(() => {
-    fetchNote().then((data) => {
-      setNote(data);
-    });
-  }, [reload]);
   return (
     <div className="py-4 ">
       <SectionHeader name="Upcoming" emph="activities" />

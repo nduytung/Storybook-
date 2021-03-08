@@ -4,6 +4,7 @@ import SideBar from "../../components/SideBar";
 import { React, useState } from "react";
 import Fade from "react-reveal/Fade";
 import NewNote from "../../components/NewNote";
+import { IconContext } from "react-icons/lib";
 
 const Header = (props) => {
   let [displayMenu, setDisplayMenu] = useState("hidden");
@@ -15,11 +16,11 @@ const Header = (props) => {
   return (
     <Fade top>
       <div className="z-10 fixed top-0 w-full">
-        <div className=" bg-white flex items-center justify-between px-2">
+        <div className=" bg-white flex text-white items-center justify-between px-2">
           <span>
             <Image src="/logo.png" alt="" height="60" width="130" />
           </span>
-          <div className="text-2xl ">
+          <div className="text-2xl">
             <GrMenu onClick={changeDisplay} />
           </div>
         </div>

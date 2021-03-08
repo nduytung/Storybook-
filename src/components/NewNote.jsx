@@ -38,7 +38,7 @@ const NewNote = (props) => {
         className="h-screen w-full bg-gray-200 opacity-50 top-0 fixed"
         onClick={changeDisplayNote}
       ></div>
-      <div className="bg-white rounded-xl mx-2  my-5 fixed py-5 px-2 shadow-xl">
+      <div className="bg-white rounded-t-3xl  bottom-0  fixed py-5 px-2 shadow-xl">
         <p className="text-2xl text-gray-700 px-1">Thêm một ghi chú nàoo</p>
         <hr className="my-4" />
         <div>

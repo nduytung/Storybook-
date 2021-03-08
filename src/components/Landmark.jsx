@@ -28,8 +28,54 @@ const fetchLandmarks = async () => {
 };
 
 const Landmark = () => {
+  const landmark = [
+    {
+      year: 18,
+      date: "01/01",
+      detail: "Ngày đầu tiên mình iu nhau. Hê hê",
+    },
+    {
+      year: 18,
+      date: "26/03",
+      detail: "Lần đầu tiên bọn mình đi chơi. Có cả bạn cậu nữaaa",
+    },
+    {
+      year: 18,
+      date: "17/05",
+      detail: "Bọn mình hòa sau 1 lần cãi nhau to ơi là to =))))",
+    },
+    {
+      year: 18,
+      date: "25/05",
+      detail: "Đi Đầm Sen với lớp nữa",
+    },
+    {
+      year: 19,
+      date: "26/06",
+      detail: "Bọn mình nói chuyện lại sau 1 thời gian lâu ơi là lâu. Hí",
+    },
+    {
+      year: 19,
+      date: "04/07",
+      detail: "Đi xem phim nữa nè =)))",
+    },
+    {
+      year: 20,
+      date: "03/11",
+      detail: "Ai cũng biết đây là ngày gì =))) <3",
+    },
+    {
+      year: 20,
+      date: "20/11",
+      detail: "Lâu lắm mới lại dc gặp bae, uwu",
+    },
+    {
+      year: 21,
+      date: "12/02",
+      detail: "Lần thứ 2 bọn mình đón năm mới với nhau. Luv u soo <3 ",
+    },
+  ];
   let [activeYear, setActiveYear] = useState(18);
-  let [landmark, setLandmark] = useState([]);
   const renderYear = () => {
     return years.map((year, i) => {
       return (
@@ -38,17 +84,13 @@ const Landmark = () => {
           onClick={() => {
             setActiveYear(year);
           }}
-          className="focus:font-bold focus:text-tomato focus:outline-none list-none border rounded-lg text-center border-gray-200 text-2xl py-6 px-3 mx-2 "
+          className="focus:font-bold focus:text-tomato focus:outline-none list-none border rounded-xl text-center border-gray-200 text-2xl py-6 px-3 mx-2 "
         >
           {year}
         </button>
       );
     });
   };
-
-  useEffect(() => {
-    fetchLandmarks().then((data) => setLandmark(data));
-  }, []);
 
   const years = [18, 19, 20, 21];
 

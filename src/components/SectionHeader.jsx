@@ -5,7 +5,7 @@ const SectionHeader = (props) => {
 
   return (
     <Flip bottom>
-      <div className="text-center text-2xl py-4">
+      <div className="text-center text-2xl font-light py-4">
         {name}
         <span className="text-purple ml-1">{emph}</span>
       </div>

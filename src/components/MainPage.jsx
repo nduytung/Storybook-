@@ -6,8 +6,10 @@ const MainPage = () => {
   return (
     <div className="">
       <BeenTogether />
-      <Upcomming />
-      <Landmark />
+      <div className="bg-white w-full -mt-8 rounded-3xl">
+        <Upcomming />
+        <Landmark />
+      </div>
     </div>
   );
 };

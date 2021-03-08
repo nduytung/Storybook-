@@ -19,35 +19,37 @@ const BeenTogether = () => {
     setCount(calculatingDate());
   }, []);
   return (
-    <div className="text-white bg-gradient-to-r from-purple to-pink container mx-auto px-2 text-center pb-12 ">
-      <div className=" text-2xl pt-16 pb-12">Been together for </div>
+    <div className=" text-white bg-gradient-to-r from-purple to-pink container mx-auto px-2 text-center pb-12 ">
+      <div className=" text-xl font-bold pt-16 pb-12 font-mono">
+        Been in luv for{" "}
+      </div>
       <div className="grid grid-cols-8">
         <Fade left>
           <div className="col-span-3">
             <Image
               src="/me.jpg"
-              width={300}
-              height={300}
-              className="z-0 h-32 w-32 rounded-full border border-gray-500 border-dashed mx-auto"
+              width={250}
+              height={250}
+              className="z-0 h-28 w-28 rounded-full border border-gray-500 border-dashed mx-auto"
             />
-            <div className="w-3/4 mx-auto">
+            <div className="w-3/4 mx-auto ">
               <Button name="Duy Tùng" link="/aboutme" />
             </div>
           </div>
         </Fade>
         <Tada>
           <div className="flex flex-col col-span-2 text-2xl">
-            <span className="text-4xl font-bold my-4">{count}</span>
-            <span className="text-lg">DAYS </span>
+            <span className="text-4xl font-semibold my-4">{count}</span>
+            <span className="text-xl font-light">DAYS </span>
           </div>
         </Tada>
         <Fade right>
           <div className="col-span-3">
             <Image
               src="/her.jpg"
-              width={300}
-              height={300}
-              className="z-0 h-32 w-32 rounded-full border border-gray-500 border-dashed mx-auto"
+              width={250}
+              height={250}
+              className="z-0 h-28 w-28 rounded-full border border-gray-500 border-dashed mx-auto"
             />
 
             <div className="w-3/4 mx-auto">

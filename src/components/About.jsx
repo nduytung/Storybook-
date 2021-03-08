@@ -1,7 +1,22 @@
 import { FaHeartbeat } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
+import { GrNext, GrPrevious } from "react-icons/gr";
+import { useState } from "react";
 const About = (props) => {
   const { name, dob, color, number, dislike, note } = props;
+  const imgArr = ["img 1", "img 2", "img 3", "img4"];
+  let [cur, setCur] = useState(0);
+
+  const setNextCur = () => {
+    if (cur == imgArr.length - 1) setCur(0);
+    else setCur((cur += 1));
+  };
+
+  const setPrevCur = () => {
+    if (cur == 0) setCur(imgArr.length - 1);
+    else setCur((cur -= 1));
+  };
+
   return (
     <div>
       <div className="bg-purple h-48 w-full rounded-b-3xl">
@@ -11,7 +26,14 @@ const About = (props) => {
         </p>
       </div>
       <div className="shadow-2xl container -mt-20 w-11/12 mx-auto pb-4 rounded-2xl overflow-hidden border border-gray-200">
-        <div className="bg-gray-400 w-full h-96"></div>
+        <div className="bg-gray-400 w-full h-96">
+          <p> {imgArr[cur]} </p>
+        </div>
+        <div className=" w-full h-96 justify-between flex items-center text-4xl -mt-96 bg-transparent">
+          <GrPrevious onClick={setPrevCur} />
+          <GrNext onClick={setNextCur} />
+        </div>
+
         <div className="mx-2 my-3">
           <p className="text-2xl text-gray-600 flex items-center">
             {" "}
